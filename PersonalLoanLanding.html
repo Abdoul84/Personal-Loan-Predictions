@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+ <!-- Navigation -->
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="background-color: #e79d2e;" href="PersonalLoanLanding.html">Personal Loan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Sex.html">Gender</a>
+                    <a class="dropdown-item" href="Savings.html">Savings Account</a>
+                    <a class="dropdown-item" href="Married.html">Marital Status</a>
+                    <a class="dropdown-item" href="Mortgage.html">Mortgage</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparisons.html">Comparison</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Data.html">Data</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+     <!-- Content -->
+    <div class="container">
+        <div class="row">
+          <!-- Left Session -->
+          <div class="col-lg-7">
+                <div class="box">
+                  <h1 class="title">Summary</h1>
+                  <img src="Resources/assets/images/Sex.png" width="230px" height="190px" alt="Gender">
+                  <p>The purpose of this research was to predict one's chance to get a personal loan based on one's gender,
+                    marital status, or whether one has a savings account or mortgage.</p>
+                  <br>
+                  <p>After assembling the dataset, I used sklearn.model along Logistic Regression classifier that trained and
+                    and tested four columns (Sex - Savings - Married - Mortgage) in order to come up with predictions accuracy
+                    above 50%. I used Tableau to plot predictions. Finally, I ended with HTML and Style.css to showcase all plots 
+                    with their respective explanations</p>
+                  <br> 
+                  <p>CONCLUSION: Based on the model, not so much about gender, but the next batch of personal loan will most likely
+                    be centered around people who have a Savings Account, a Mortgage, and are married.</p>
+                </div>
+          </div>
+          <!-- Right Session -->
+          <div class="col-lg-5">
+                <div class="box">
+                  <h2>Visualizations</h2>
+                  <div class="container">
+                        <div class="row" >
+                          <div class="col-6">
+                            <a href="Sex.html">
+                              <img class="panel" src="Resources/assets/images/Sex.png" width="230px" height="190px" alt="Max Temp Chart">
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="Savings.html">
+                              <img class="panel" src="Resources/assets/images/Savings.png" width="230px" height="190px" alt="Humidity Chart">
+                            </a>
+                          </div>
+                        </div>
+            
+                        <div class="row" >
+                          <div class="col-6">
+                            <a href="Married.html">
+                              <img class="panel" src="Resources/assets/images/Married.png" width="230px" height="190px" alt="Cloudiness Chart">
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="Mortgage.html">
+                              <img class="panel" src="Resources/assets/images/Mortgage.png" width="230px" height="190px" alt="Wind Speed Chart">
+                            </a>
+                          </div>
+                        </div>
+                 </div>
+          </div>
+    </div>       
+</body>
+
+<!-- Footer  -->
+<footer>
+    <div class="footer">Copyright &copy; Emerson Bootcamp 2021</div>
+</footer>
+
+</html>
